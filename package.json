@@ -35,6 +35,21 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "cypress": "^9.7.0",
     "gh-pages": "^3.2.3"
+  },
+  "description": "> **This tiny application is like adding,removing,deleting, resetting products which reflects in the total number of products into our shopping cart.**",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnab-datta/counter-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnab-datta/counter-app/issues"
   }
 }
