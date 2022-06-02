@@ -22,18 +22,16 @@ describe("Tests Counter App", () => {
   });
 
   //Add counter in the first row upto 4 and check the cart items value at the top should be 1
-  it("Increase counter in one row ", () => {
-    increaseCounter(5);
+  it("Increase counter in a row ", () => {
+    //increase counter in first row
+    increaseCounter(2, 3, 1);
+    //increase counter in second row
+    increaseCounter(3, 5, 2);
   });
-  /*
-  //Add counter in the second row upto 2 and check the cart item value at the top should be 2
-  it("Add counter in another row upto 2", () => {
-    increaseCounter(3, 3);
-  });
-  */
 
-  it("Reduce counter in the first row upto 1", () => {
-    decreaseCount();
+  it("Reduce counter in the first row upto 0", () => {
+    //reduce the counter in first row
+    decreaseCount(2, 2, 1);
   });
 
   it("Delete the row", () => {
