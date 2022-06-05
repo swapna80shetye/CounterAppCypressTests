@@ -1,4 +1,4 @@
-export function loginPage() {
+export function startApplication() {
   cy.visit("http://localhost:3000/");
   cy.get(".navbar-brand > .badge").contains("0");
   cy.get(".navbar-brand > .badge").should("not.be.hidden");

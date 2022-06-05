@@ -3,16 +3,12 @@
 import { refreshPage } from "./refresh-page";
 import { increaseCounter } from "./increase-counter";
 import { recyclePage } from "./recycle-page";
-import { loginPage } from "./login-page";
+import { startApplication } from "./start-application";
 import { decreaseCount } from "./decrease-counter";
 
 describe("Tests Counter App", () => {
-  it("Opens the application", () => {
-    loginPage();
-  });
-
-  it("Refresh the page", () => {
-    refreshPage();
+  it("Start the application", () => {
+    startApplication();
   });
 
   //Add counter in the first row upto 4 and check the cart items value at the top should be 1
@@ -26,6 +22,10 @@ describe("Tests Counter App", () => {
   it("Reduce counter in the first row upto 0", () => {
     //reduce the counter in first row
     decreaseCount(2, 2, 1);
+  });
+
+  it("Refresh the page", () => {
+    refreshPage();
   });
 
   //Recycle page button is enabled only after deleting all the rows
